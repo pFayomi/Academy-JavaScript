@@ -1,18 +1,18 @@
 let userName = prompt("Who's there?", '');
+let pass = prompt('Password?', '');
 
 if (userName === 'Admin') {
-  let pass = prompt('Password?', '');
-
+  
   if (pass === 'TheMaster') {
-    alert('Welcome!');
+    console.log('Welcome!');
   } else if (pass === '' || pass === null) {
-    alert('Canceled.');
+    console.log('Canceled.');
   } else {
-    alert('Wrong password');
+    console.log('Wrong password');
   }
 
 } else if (userName === '' || userName === null) {
-  alert('Canceled.');
+  console.log('Canceled.');
 } else {
-  alert("I don't know you");
+  console.log("I don't know you");
 }
