@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            padding: 30px 50px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p id="first">This is my first JavaScript code</p>
+        <button>Click me</button>
+    </div>
+    <script>
+        let first = document.getElementById("first");
+        first.innerText = "This will not be my last";
+        console.log(first);
+    </script>
+</body>
+</html>
